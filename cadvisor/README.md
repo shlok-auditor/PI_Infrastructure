@@ -1,14 +1,14 @@
-![#c5f015] Node.js Prometheus Metrics Integration with Cadvisor
+Node.js Prometheus Metrics Integration with Cadvisor
 
 This Node.js project demonstrates how to integrate Prometheus metrics into your application and track them in Grafana using Cadvisor. Cadvisor is a container monitoring tool that can be used to collect metrics about the performance and resource usage of your Node.js application.
 
 
-![#c5f015] Prerequisites
+Prerequisites
 
 Node.js installed on your system
 Docker and Docker Compose for running Cadvisor, Prometheus, and Grafana.
 
-![#c5f015] Getting Started
+Getting Started
 
 Clone this repository to your local machine.
 Install the project dependencies by running the following command:
