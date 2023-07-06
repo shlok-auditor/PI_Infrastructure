@@ -1,0 +1,5 @@
+*.dotnet
+*.userprefs
+*.vs
+bin/
+obj/
