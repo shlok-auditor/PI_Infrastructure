@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj",
+        "projectName": "MyApp",
+        "projectPath": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj",
+        "packagesPath": "C:\\Users\\alaguthiraviyam.m\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alaguthiraviyam.m\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Sentry": {
+              "target": "Package",
+              "version": "[3.33.1, )"
+            },
+            "Sentry.AspNet": {
+              "target": "Package",
+              "version": "[3.33.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

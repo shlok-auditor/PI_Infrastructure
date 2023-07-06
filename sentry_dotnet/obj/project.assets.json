@@ -1,0 +1,256 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Sentry/3.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Sentry.targets": {}
+        }
+      },
+      "Sentry.AspNet/3.33.1": {
+        "type": "package",
+        "dependencies": {
+          "Sentry": "3.33.1",
+          "Sentry.DiagnosticSource": "3.33.1"
+        },
+        "compile": {
+          "lib/net461/Sentry.AspNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Sentry.AspNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sentry.DiagnosticSource/3.33.1": {
+        "type": "package",
+        "dependencies": {
+          "Sentry": "3.33.1",
+          "System.Diagnostics.DiagnosticSource": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Sentry.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Sentry.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sentry/3.33.1": {
+      "sha512": "0pto6VR17USfhmXucBs4y4M02HoyG4uDb0bXHrIpEDT4v0GNIxqfFbE8u3oCa/qwJ1wb1nehusUOC6eUl4KOmQ==",
+      "type": "package",
+      "path": "sentry/3.33.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Sentry.targets",
+        "buildTransitive/Sentry.targets",
+        "lib/net461/Sentry.dll",
+        "lib/net461/Sentry.xml",
+        "lib/net5.0/Sentry.dll",
+        "lib/net5.0/Sentry.xml",
+        "lib/net6.0-android31.0/Sentry.dll",
+        "lib/net6.0-android31.0/Sentry.xml",
+        "lib/net6.0-ios16.1/Sentry.dll",
+        "lib/net6.0-ios16.1/Sentry.xml",
+        "lib/net6.0-maccatalyst16.1/Sentry.dll",
+        "lib/net6.0-maccatalyst16.1/Sentry.xml",
+        "lib/net6.0/Sentry.dll",
+        "lib/net6.0/Sentry.xml",
+        "lib/netcoreapp3.0/Sentry.dll",
+        "lib/netcoreapp3.0/Sentry.xml",
+        "lib/netstandard2.0/Sentry.dll",
+        "lib/netstandard2.0/Sentry.xml",
+        "lib/netstandard2.1/Sentry.dll",
+        "lib/netstandard2.1/Sentry.xml",
+        "sentry-nuget.png",
+        "sentry.3.33.1.nupkg.sha512",
+        "sentry.nuspec",
+        "tools/sentry-cli-Darwin-arm64",
+        "tools/sentry-cli-Darwin-x86_64",
+        "tools/sentry-cli-Linux-aarch64",
+        "tools/sentry-cli-Linux-i686",
+        "tools/sentry-cli-Linux-x86_64",
+        "tools/sentry-cli-Windows-i686.exe",
+        "tools/sentry-cli-Windows-x86_64.exe"
+      ]
+    },
+    "Sentry.AspNet/3.33.1": {
+      "sha512": "oCVOV/2YHIhI/Pw7/bLeGb00wjyeKgcXXJFtsETPndH9Xr9x2rP6OXmcqboo7JMyK1xOOYM/Ai7CdGb93X0jJA==",
+      "type": "package",
+      "path": "sentry.aspnet/3.33.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Sentry.AspNet.dll",
+        "lib/net461/Sentry.AspNet.xml",
+        "sentry-nuget.png",
+        "sentry.aspnet.3.33.1.nupkg.sha512",
+        "sentry.aspnet.nuspec"
+      ]
+    },
+    "Sentry.DiagnosticSource/3.33.1": {
+      "sha512": "Ojg7GvkUl/jQzyOAe8CYpY95sPj1JYioavE3Uwul2wsjAsT/xA6R/FUm2bgBz20lObxkZrQCJU8823eBUnlztw==",
+      "type": "package",
+      "path": "sentry.diagnosticsource/3.33.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Sentry.DiagnosticSource.dll",
+        "lib/net461/Sentry.DiagnosticSource.xml",
+        "lib/netstandard2.0/Sentry.DiagnosticSource.dll",
+        "lib/netstandard2.0/Sentry.DiagnosticSource.xml",
+        "lib/netstandard2.1/Sentry.DiagnosticSource.dll",
+        "lib/netstandard2.1/Sentry.DiagnosticSource.xml",
+        "sentry-nuget.png",
+        "sentry.diagnosticsource.3.33.1.nupkg.sha512",
+        "sentry.diagnosticsource.nuspec"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.5.0": {
+      "sha512": "eIHRELiYDQvsMToML81QFkXEEYXUSUT2F28t1SGrevWqP+epFdw80SyAXIKTXOHrIEXReFOEnEr7XlGiC2GgOg==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.5.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Sentry >= 3.33.1",
+      "Sentry.AspNet >= 3.33.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alaguthiraviyam.m\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj",
+      "projectName": "MyApp",
+      "projectPath": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\MyApp.csproj",
+      "packagesPath": "C:\\Users\\alaguthiraviyam.m\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alaguthiraviyam.m\\MyApp\\MyApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\alaguthiraviyam.m\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Sentry": {
+            "target": "Package",
+            "version": "[3.33.1, )"
+          },
+          "Sentry.AspNet": {
+            "target": "Package",
+            "version": "[3.33.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Sentry.AspNet 3.33.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Sentry.AspNet",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
