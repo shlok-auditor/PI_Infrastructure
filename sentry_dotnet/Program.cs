@@ -6,8 +6,8 @@ using System.Reflection;
 
 SentrySdk.Init(options =>
 {
-    
-    options.Dsn = "https://486c526db3a945fb88756e8562e7f1c4@o4505441023688704.ingest.sentry.io/4505469962944512";
+    //   options.Dsn = "https://486c526db3a945fb88756e8562e7f1c4@o4505441023688704.ingest.sentry.io/4505469962944512";  ----alaguthiraviyam@shloklabs.com dsn id
+    options.Dsn = "https://984fe25ecc8d4a9c9c7c697f2a0f6ec7@o4505486496628736.ingest.sentry.io/4505486556594176";
 
     options.Debug = true;
 

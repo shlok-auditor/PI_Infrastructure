@@ -18,7 +18,7 @@ import {
 import {Sentry} from '../../utilities/sentryError'
 
 export class routePlanner{
-    static getRoutePath = async(req,res) => {
+    static getRoutePath = async(req,res,next) => {
         try {
           if (!req.file) {
             return res.status(400).send('No file uploaded');
@@ -88,13 +88,14 @@ export class routePlanner{
 
       }catch (err) {
           console.log(err);
-          Sentry.captureMessage(err, {
-            tags: {
-              filepath: __filename,
-              dirname : __dirname ,
-            }
-          });
+          next(err);
         }  
+      }
+
+      static async testOne(req,res,next) {
+        throw new Error('Intentional crash');
+        // next()
+        
       }
       
       

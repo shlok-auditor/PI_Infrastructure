@@ -1,12 +1,13 @@
 import { validate } from '../middleware/validate';
 import { createUserSchema, loginUserSchema } from './schemas/user.schema';
-import {loginUserHandler, logoutHandler, refreshAccessTokenHandler, registerUserHandler } from './routes/auth';
+import {loginUserHandler, logoutHandler, refreshAccessTokenHandler, testTwo,registerUserHandler } from './routes/auth';
 import { createOrgSchema } from './schemas/org.schema';
 import { deserializeUser } from '../middleware/deserializeUser';
 import { requireUser } from '../middleware/requireUser';
 import { registerOrganization } from './routes/organization';
 import { routePlanner } from './routes/routeplan';
 import multer  from 'multer';
+import { sentryError, Sentry } from '../middleware/sentryError';
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'uploads/');
@@ -36,6 +37,8 @@ export default async (app: any) => {
   app.post('/api/org/register', validate(createOrgSchema), registerOrganization);
 
   app.post('/api/getRoutePath',uploads,routePlanner.getRoutePath);
+  app.get('/api/testOne',routePlanner.testOne);
+  app.get('/api/testTwo',testTwo);
 }
 
 

@@ -5,10 +5,9 @@ import { AppDataSource } from './utilities/data-source';
 import validateEnv from './utilities/validateEnv';
 import { connectRedis } from './utilities/connectRedis';
 import { loadMonitoringModule } from './utilities/swaggerStats';
-import { sentryError } from './utilities/sentryError';
+import { Sentry, sentryError } from './middleware/sentryError';
 import RouteConfiguration from './api';
 import { handleGlobalErrors, healthCheck, useCors, useLogger } from './utilities/service-config';
-
 
 AppDataSource.initialize().then(async () => {
   // VALIDATE ENV
@@ -40,6 +39,15 @@ AppDataSource.initialize().then(async () => {
   await handleGlobalErrors(app);
 
   await sentryError(app);
+
+  // Error handling middleware
+app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+  // Capture and report the error to Sentry
+  Sentry.captureException(err);
+
+  // Handle the error and send an appropriate response to the client
+  res.status(500).json({ error: 'Internal Server Error' });
+});
 
   app._router.stack.forEach(route => {
     if (route.route && route.route.path) {

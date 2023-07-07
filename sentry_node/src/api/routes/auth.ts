@@ -215,3 +215,14 @@ export const getRoutePath = async (
     next(err);
   }
 };
+export const testTwo = async (req,res,next) => {
+  try{
+    let a = "one"; let b = 2;
+    return a/b;
+  }catch(e){
+    next()
+  }
+  // process.exit(1);
+  // next()
+  
+};

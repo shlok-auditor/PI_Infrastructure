@@ -7,9 +7,11 @@ import 'package:stack_trace/stack_trace.dart';
 void main() async {
   await SentryFlutter.init(
     (options) {
+      // options.dsn =
+      //     'https://89572cde74944acf8dcfabd1a1aa080c@o4505441023688704.ingest.sentry.io/4505470630166528';
       options.dsn =
-          'https://89572cde74944acf8dcfabd1a1aa080c@o4505441023688704.ingest.sentry.io/4505470630166528';
-      // Additional configuration options can be set here
+          'https://789ed1881c3747c48441bc5cd8f55962@o4505486496628736.ingest.sentry.io/4505486571470848';
+      // // Additional configuration options can be set here
     },
     appRunner: () => runApp(const MyApp()),
   );
