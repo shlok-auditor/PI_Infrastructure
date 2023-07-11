@@ -1,0 +1,18 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: always
+
+volumes:
+  jenkins_home:
+
+admin password:
+
+685df83d4cf0475bb5c48897ba2eb19b
